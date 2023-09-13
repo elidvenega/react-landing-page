@@ -196,13 +196,38 @@
   padding: 4rem;
 }
 
+.footer h4 {
+  color: var(--green-color);
+  font-size: 2rem;
+}
+
 .footer .footer-nav nav ul {
-  color: var(--white-text);
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-direction: row;
   margin: 3rem 3rem;
   list-style: none;
-  
+}
+
+.footer .footer-nav li a {
+  color: var(--green-color);
+  text-decoration: none;
+}
+
+.footer-nav li a:hover {
+  color: var(--white-text);
+}
+
+.footer-image-links {
+  display: flex;
+  gap: 1rem;
+}
+.footer-image-links a {
+  text-decoration: none;
+}
+
+.footer-image-links img:hover {
+  margin: 0 0.5rem;
+  filter: brightness(6);
 }

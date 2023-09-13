@@ -8,27 +8,39 @@ export default function Footer() {
     <>
       <footer className="footer">
         <h4>sunnyside</h4>
-       <div className="footer-nav">
-       <nav>
-          <ul>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Projects</a>
-            </li>
-          </ul>
+        <div className="footer-nav">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+            </ul>
           </nav>
-       </div>
-       <div>
-       <img src={Facebook} alt="facebook" />
-        <img src={Instagram} alt="instagram" />
-        <img src={Twitter} alt="twitter" />
-        <img src={Pinterest} alt="pinterest" />
-       </div>
+        </div>
+        <div className="footer-image-links">
+          <a href="#">
+            {" "}
+            <img src={Facebook} alt="facebook" />
+          </a>
+          <a href="#">
+            {" "}
+            <img src={Instagram} alt="instagram" />
+          </a>
+          <a href="#">
+            {" "}
+            <img src={Twitter} alt="twitter" />
+          </a>
+          <a href="#">
+            {" "}
+            <img src={Pinterest} alt="pinterest" />
+          </a>
+        </div>
       </footer>
     </>
   );
