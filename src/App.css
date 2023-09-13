@@ -65,12 +65,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .content-img-cherry {
   background: url("./assets/images/desktop/image-graphic-design.jpg") no-repeat
     center center/cover;
-  min-height: 100vh;
 }
 
 .content-img-cherry h2 {
@@ -90,7 +90,6 @@
 .content-img-orange {
   background: url("./assets/images/desktop/image-photography.jpg") no-repeat
     center center/cover;
-  min-height: 100vh;
 }
 
 .content-img-orange h2 {
@@ -227,6 +226,12 @@
   text-decoration: none;
 }
 
+/* transition images */
+/* Thanks to chat gpt for this line */
+/* .footer-image-links img {
+  filter: hue-rotate(100deg);
+} */
 .footer-image-links img:hover {
   filter: brightness(6);
+  transition: 0.9s;
 }
