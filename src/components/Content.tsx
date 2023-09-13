@@ -20,12 +20,9 @@ export default function Content() {
           </p>
           <h3>Learn More</h3>
         </div>
-        <div>
-          <img className="content-img" src={EggImg} alt="egg-img" />
-        </div>
-        <div>
-          <img className="content-img" src={PinkCup} alt="pick-cup" />
-        </div>
+        
+        <img className="content-img" src={EggImg} alt="egg-img" />
+        <img className="content-img" src={PinkCup} alt="pick-cup" />
         <div className="content-text">
           <h2 className="">
             Stand out to the right <br /> audience{" "}
