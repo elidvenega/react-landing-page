@@ -15,6 +15,16 @@
   background: url("./assets/images/desktop/image-header.jpg") no-repeat center
     center/cover;
   min-height: 100vh;
+  max-width: 100%;
+}
+
+.header h1 {
+  color: var(--white-text);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 
 .header-logo {
@@ -234,4 +244,23 @@
 .footer-image-links img:hover {
   filter: brightness(6);
   transition: 0.9s;
+}
+
+@media screen and (max-width: 780px) {
+  .header-logo {
+    font-size: calc(var(--h2-font-size) - 0.7rem);
+  }
+
+  .header h1 {
+    font-size: calc(var(--h2-font-size) - 0.7rem);
+  }
+
+  .header-nav ul {
+    display: none;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

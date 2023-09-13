@@ -23,16 +23,7 @@ export default function OrangeHeader() {
             </li>
           </ul>
         </nav>
-        <h1
-          style={{
-            color: white_color,
-            fontSize: "3rem",
-            textAlign: "center",
-            marginTop: "4rem",
-            textTransform: "uppercase",
-            letterSpacing: "0.3rem",
-          }}
-        >
+        <h1>
           We are Creative
         </h1>
         <img
