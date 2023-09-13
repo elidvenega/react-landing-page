@@ -228,6 +228,5 @@
 }
 
 .footer-image-links img:hover {
-  margin: 0 0.5rem;
   filter: brightness(6);
 }
