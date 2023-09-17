@@ -25,19 +25,15 @@ export default function Footer() {
         </div>
         <div className="footer-image-links">
           <a href="#">
-            {" "}
             <img src={Facebook} alt="facebook" />
           </a>
           <a href="#">
-            {" "}
             <img src={Instagram} alt="instagram" />
           </a>
           <a href="#">
-            {" "}
             <img src={Twitter} alt="twitter" />
           </a>
           <a href="#">
-            {" "}
             <img src={Pinterest} alt="pinterest" />
           </a>
         </div>
