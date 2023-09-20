@@ -5,7 +5,8 @@
   --dark-blue-text-color: #082f49;
   --green-color: #115e59;
   --blue-color: #155e75;
-  --h2-font-size: 2rem;
+  --h2-font-size: 2.5rem;
+  --p-font-size: 1.1rem;
   --nav-hover-color: #7dd3fc;
   --testimonials-font-color: #9ca3af;
   --paragraph-grey-color: #64748b;
@@ -29,9 +30,6 @@
 }
 
 .header-logo {
-  color: var(--white-text);
-  font-weight: 900;
-  font-size: var(--h2-font-size);
   margin: 1.3rem 0 0 2.5rem;
 }
 
@@ -93,7 +91,8 @@
 
 .content-text p {
   color: var(--paragraph-grey-color);
-  font-weight: bold;
+  font-size: var(--p-font-size);
+  font-weight: 500;
 }
 
 .content-img-cherry {
@@ -141,6 +140,7 @@
   font-weight: 900;
   font-size: 1.3rem;
   margin-top: 2rem;
+  text-transform: uppercase;
 }
 
 /* Testimonials CSS */
