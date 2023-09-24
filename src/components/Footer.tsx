@@ -24,16 +24,16 @@ export default function Footer() {
           </nav>
         </div>
         <div className="footer-image-links">
-          <a href="#">
+          <a href="https://www.facebook.com/" target="_blank">
             <img src={Facebook} alt="facebook" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/" target="_blank">
             <img src={Instagram} alt="instagram" />
           </a>
-          <a href="#">
+          <a href="https://twitter.com/" target="_blank">
             <img src={Twitter} alt="twitter" />
           </a>
-          <a href="#">
+          <a href="https://www.pinterest.com/" target="_blank">
             <img src={Pinterest} alt="pinterest" />
           </a>
         </div>

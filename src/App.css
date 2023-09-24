@@ -23,11 +23,12 @@
 
 .header h1 {
   color: var(--white-text);
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   margin-top: 4rem;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.5rem;
 }
 
 .header-logo {
@@ -86,6 +87,15 @@
   margin: auto;
 }
 
+.content-text-container {
+  max-width: 60%;
+  margin: auto;
+}
+
+.content-text-container-two {
+  max-width: 80%;
+  margin: auto;
+}
 .content-text h2 {
   color: var(--dark-blue-text-color);
   font-size: var(--h2-font-size);
@@ -354,8 +364,16 @@
     flex-direction: column;
   }
 
-  .content-text {
+  .content-text-container {
+    max-width: 100%;
     text-align: center;
+  }
+
+  .content-text-container-two {
+    max-width: 100%;
+    text-align: center;
+  }
+  .content-text {
     padding: 2rem;
   }
 
@@ -364,7 +382,6 @@
   }
 
   .content-text p {
-    line-height: 1.5;
     padding: 0.4rem;
   }
   /* Testimonials Section */

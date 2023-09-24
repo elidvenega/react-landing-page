@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
-      <OrangeHeader />
+      <OrangeHeader title="we are creatives" />
       <HamburgerMenu />
       <Content />
       <Testimonials />
