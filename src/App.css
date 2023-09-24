@@ -8,6 +8,7 @@
   --h2-font-size: 2.5rem;
   --p-font-size: 1.1rem;
   --nav-hover-color: #7dd3fc;
+  --nav-burger-button: #facc15;
   --testimonials-font-color: #9ca3af;
   --paragraph-grey-color: #64748b;
   --footer-color: #99f6e4;
@@ -36,6 +37,7 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .header-nav ul {
@@ -58,6 +60,7 @@
   background-color: #fff;
   border: none;
   color: var(--dark-color);
+  font-weight: bold;
   padding: 0.7rem;
   margin-bottom: var(--h2-font-size);
   margin: auto;
@@ -68,6 +71,8 @@
   background-color: var(--nav-hover-color);
   color: var(--white-text);
 }
+
+/* Hamburger menu */
 
 /* UI pictures CSS */
 .content-container {
@@ -93,6 +98,7 @@
   color: var(--paragraph-grey-color);
   font-size: var(--p-font-size);
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .content-img-cherry {
@@ -261,6 +267,8 @@
   transition: 0.9s;
 }
 
+/* src/components/HamburgerMenu.css */
+
 @media screen and (max-width: 760px) {
   .header-logo {
     font-size: calc(var(--h2-font-size) - 0.7rem);
@@ -270,10 +278,77 @@
     font-size: calc(var(--h2-font-size) - 0.7rem);
   }
 
-  .header-nav ul {
+  .header-nav .header-nav-ul {
     display: none;
   }
 
+  /* Hamburger Menu */
+
+  .hamburger-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* transition: left 0.3s; */
+  }
+
+  .hamburger-nav.open {
+    /* display: block; */
+    position: fixed;
+    left: 50%;
+    top: 5rem;
+    transform: translateX(-50%);
+    background: var(--white-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    /* z-index: 10; */
+    width: 90%;
+    padding: 5rem;
+  }
+
+  .hamburger-icon {
+    cursor: pointer;
+    padding: 1.2rem;
+    position: absolute;
+    right: 0;
+  }
+
+  .bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: var(--white-text);
+    margin: 0.3rem 0;
+  }
+
+  .menu-items {
+    display: none;
+    list-style: none;
+  }
+
+  .menu-items.open {
+    display: contents;
+  }
+
+  .menu-items li a {
+    font-weight: bold;
+    color: var(--paragraph-grey-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .menu-items-button {
+    background-color: var(--nav-burger-button);
+    border: none;
+    border-radius: 3rem;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    padding: 0.7rem;
+    margin-top: 1rem;
+  }
+  /* Content Section */
   .content-container {
     display: flex;
     flex-direction: column;
@@ -292,7 +367,7 @@
     line-height: 1.5;
     padding: 0.4rem;
   }
-
+  /* Testimonials Section */
   .testimonials-container {
     display: flex;
     flex-direction: column;
@@ -305,8 +380,19 @@
   .food-images {
     width: 100%;
   }
+  /* Footer */
 
   .footer .footer-nav nav ul {
     margin: 1rem 0 3rem 0;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .menu-items {
+    display: none;
   }
 }
