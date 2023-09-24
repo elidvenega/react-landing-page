@@ -1,12 +1,16 @@
 import Arrow from "../assets/images/icon-arrow-down.svg";
+import Logo from "../assets/images/logo.svg";
+// import { useState } from "react";
+
 export default function OrangeHeader() {
-  const white_color: string = "#fff";
+  // const white_color: string = "#fff";
+
   return (
     <>
       <header className="header">
         <nav className="header-nav">
-          <div className="header-logo">sunnyside</div>
-          <ul>
+          <img className="header-logo" src={Logo} alt="logo" />
+          <ul className="header-nav-ul">
             <li>
               <a href="#"> About</a>
             </li>
@@ -23,18 +27,7 @@ export default function OrangeHeader() {
             </li>
           </ul>
         </nav>
-        <h1
-          style={{
-            color: white_color,
-            fontSize: "3rem",
-            textAlign: "center",
-            marginTop: "4rem",
-            textTransform: "uppercase",
-            letterSpacing: "0.3rem",
-          }}
-        >
-          We are Creative
-        </h1>
+        <h1>We are Creative</h1>
         <img
           style={{
             textAlign: "center",
