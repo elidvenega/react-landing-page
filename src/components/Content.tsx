@@ -6,25 +6,26 @@ export default function Content() {
     <>
       <div className="content-container">
         <div className="content-text">
-          <h2>
+         <div className="content-text-container">
+         <h2>
             Transform your <br />
             brand
           </h2>
           <p>
             We are a full-service creative agency specializing in
-            <br />
             helping brands grow fast. Engage your clients through
-            <br />
             compelling visuals that do most of the marketing for you.
           </p>
           <h3>Learn More</h3>
+         </div>
         </div>
 
         <img className="content-img" src={EggImg} alt="egg-img" />
         <img className="content-img" src={PinkCup} alt="pick-cup" />
         <div className="content-text">
+        <div className="content-text-container-two">
           <h2>
-            Stand out to the right <br /> audience
+            Stand out to the right audience
           </h2>
           <p>
             Using a collaborative formula of designers, researchers, <br />
@@ -32,6 +33,7 @@ export default function Content() {
             build and extend your brand in digital places.
           </p>
           <h3>Learn More</h3>
+          </div>
         </div>
         <div className="content-img-cherry">
           <h2>Graphic Design</h2>

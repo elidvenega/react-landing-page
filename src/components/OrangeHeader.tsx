@@ -1,10 +1,7 @@
 import Arrow from "../assets/images/icon-arrow-down.svg";
 import Logo from "../assets/images/logo.svg";
-// import { useState } from "react";
 
-export default function OrangeHeader() {
-  // const white_color: string = "#fff";
-
+export default function OrangeHeader({ title }: { title: string }) {
   return (
     <>
       <header className="header">
@@ -27,7 +24,7 @@ export default function OrangeHeader() {
             </li>
           </ul>
         </nav>
-        <h1>We are Creative</h1>
+        <h1>{title}</h1>
         <img
           style={{
             textAlign: "center",

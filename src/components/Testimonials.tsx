@@ -6,10 +6,14 @@ import OrangePlate from "../assets/images/desktop/image-gallery-orange.jpg";
 import Cone from "../assets/images/desktop/image-gallery-cone.jpg";
 import SugarCubes from "../assets/images/desktop/image-gallery-sugarcubes.jpg";
 
-export default function Testimonials() {
+export default function Testimonials({
+  testimonials,
+}: {
+  testimonials: string;
+}) {
   return (
     <>
-      <h3 className="testimonials-heading center">Client Testimonials</h3>
+      <h3 className="testimonials-heading center">{testimonials}</h3>
       <div className="testimonials-container">
         <div className="testimonials-inner-container">
           <img className="testimonials-img" src={FirstImg} alt="emily" />
