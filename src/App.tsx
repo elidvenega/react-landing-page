@@ -11,7 +11,7 @@ export default function App() {
       <OrangeHeader title="we are creatives" />
       <HamburgerMenu />
       <Content />
-      <Testimonials />
+      <Testimonials testimonials="client testimonials" />
       <Footer />
     </>
   );
