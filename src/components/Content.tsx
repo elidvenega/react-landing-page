@@ -36,20 +36,24 @@ export default function Content() {
           </div>
         </div>
         <div className="content-img-cherry">
-          <h2>Graphic Design</h2>
+        <div className="content-img-cherry-text">
+        <h2>Graphic Design</h2>
           <p>
             Great design makes you memorable. We deliver <br />
             artwork that underscores your brand message <br />
-            and captures potential clients attention.{" "}
+            and captures potential clients attention.
           </p>
         </div>
+        </div>
         <div className="content-img-orange">
-          <h2>Photography</h2>
+        <div className="content-img-orange-text">
+        <h2>Photography</h2>
           <p>
             Increase your credibility by getting the most <br />
             stunning, high-quality photos that improve your <br />
             business image.
           </p>
+        </div>
         </div>
       </div>
     </>
