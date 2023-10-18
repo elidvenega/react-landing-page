@@ -22,6 +22,7 @@ export default function OrangeHeader({ title }: { title: string }) {
                 CONTACT
               </button>
             </li>
+            <li></li>
           </ul>
         </nav>
         <h1>{title}</h1>
