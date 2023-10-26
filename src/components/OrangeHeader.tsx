@@ -26,6 +26,7 @@ export default function OrangeHeader({ title }: { title: string }) {
           </ul>
         </nav>
         <h1>{title}</h1>
+        <a href="#bottom">
         <img
           style={{
             textAlign: "center",
@@ -37,6 +38,7 @@ export default function OrangeHeader({ title }: { title: string }) {
           src={Arrow}
           alt="Arrow"
         />
+        </a>
       </header>
     </>
   );
