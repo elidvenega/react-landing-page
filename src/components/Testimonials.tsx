@@ -30,7 +30,7 @@ export default function Testimonials({ subTitle }: { subTitle: string }) {
           <div className="testimonials-mt">
             <p>
               Sunnyssides enthusiam coupled with thir <br />
-              keen interest in our brand's success made it <br />a satisfying
+              keen interest in our brand's success made it <br /> a satisfying
               and enjoyable experience.
             </p>
             <div className="testimonials-mt">

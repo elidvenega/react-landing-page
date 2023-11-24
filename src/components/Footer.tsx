@@ -6,7 +6,7 @@ import Pinterest from "../assets/images/icon-pinterest.svg";
 export default function Footer() {
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" id="bottom">
         <h4>sunnyside</h4>
         <div className="footer-nav">
           <nav>
