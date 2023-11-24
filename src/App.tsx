@@ -3,6 +3,7 @@ import OrangeHeader from "./components/OrangeHeader";
 import HamburgerMenu from "./components/HamburgerMenu";
 import Content from "./components/Content";
 import Testimonials from "./components/Testimonials";
+import FoodImages from "./components/FoodImages";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <HamburgerMenu />
       <Content />
       <Testimonials subTitle="client testimonials" />
+      <FoodImages />
       <Footer />
     </>
   );
