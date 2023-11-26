@@ -1,10 +1,6 @@
 import FirstImg from "../assets/images/image-emily.jpg";
 import SecondImg from "../assets/images/image-thomas.jpg";
 import ThirdImg from "../assets/images/image-jennie.jpg";
-import MilkImg from "../assets/images/desktop/image-gallery-milkbottles.jpg";
-import OrangePlate from "../assets/images/desktop/image-gallery-orange.jpg";
-import Cone from "../assets/images/desktop/image-gallery-cone.jpg";
-import SugarCubes from "../assets/images/desktop/image-gallery-sugarcubes.jpg";
 
 export default function Testimonials({ subTitle }: { subTitle: string }) {
   return (
@@ -53,13 +49,6 @@ export default function Testimonials({ subTitle }: { subTitle: string }) {
             </div>
           </div>
         </div>
-      </div>
-      {/* Food Images  */}
-      <div className="food-images-container">
-        <img className="food-images" src={MilkImg} alt="milk" />
-        <img className="food-images" src={OrangePlate} alt="orange" />
-        <img className="food-images" src={Cone} alt="cone" />
-        <img className="food-images" src={SugarCubes} alt="sugar" />
       </div>
     </>
   );
