@@ -14,7 +14,7 @@ export default function App() {
       <Content />
       <Testimonials subTitle="client testimonials" />
       <FoodImages />
-      <Footer />
+      <Footer  footerTitle="sunnyside"/>
     </>
   );
 }
