@@ -3,6 +3,7 @@ import PinkCup from "../assets/images/desktop/image-stand-out.jpg";
 
 interface Content {
   paragraphOne: string;
+  paragraphTwo: string;
   learnMoreHeading: string;
   audienceHeading: string;
   designHeading: string;
@@ -14,6 +15,11 @@ const data: Content = {
   We are a full-service creative agency specializing in
   helping brands grow fast. Engage your clients through
   compelling visuals that do most of the marketing for you.
+  `,
+  paragraphTwo: `
+  Using a collaborative formula of designers, researchers,
+  photographers, videographers, and copywriters, we'll 
+  build and extend your brand in digital places.
   `,
   learnMoreHeading: `Learn More`,
   audienceHeading: `Stand out to the right audience`,
@@ -41,11 +47,7 @@ export default function Content() {
         <div className="content-text">
           <div className="content-text-container-two">
             <h2>{data.audienceHeading}</h2>
-            <p>
-              Using a collaborative formula of designers, researchers, <br />
-              photographers, videographers, and copywriters, we'll <br />
-              build and extend your brand in digital places.
-            </p>
+            <p>{data.paragraphTwo}</p>
             <h3>{data.learnMoreHeading}</h3>
           </div>
         </div>
