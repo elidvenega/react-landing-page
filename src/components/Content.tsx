@@ -1,14 +1,6 @@
 import EggImg from "../assets/images/desktop/image-transform.jpg";
 import PinkCup from "../assets/images/desktop/image-stand-out.jpg";
-
-interface Content {
-  paragraphOne: string;
-  paragraphTwo: string;
-  learnMoreHeading: string;
-  audienceHeading: string;
-  designHeading: string;
-  photographyHeading: string;
-}
+import { Content } from "./data";
 
 const data: Content = {
   paragraphOne: `
