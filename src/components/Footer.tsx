@@ -30,7 +30,9 @@ const footerLinks: Content = {
 };
 
 const firstHref = footerLinks.cellBlocks[0]?.link?.href;
-
+const secondHref = footerLinks.cellBlocks[1]?.link?.href;
+const thirdHref = footerLinks.cellBlocks[2]?.link?.href;
+const fourthHref = footerLinks.cellBlocks[3]?.link?.href;
 export default function Footer({ footerTitle }: { footerTitle: string }) {
   return (
     <>
@@ -55,13 +57,13 @@ export default function Footer({ footerTitle }: { footerTitle: string }) {
           <a href={firstHref} target="_blank">
             <img src={Facebook} alt="facebook" />
           </a>
-          <a href={footerLinks.cellBlocks[1].link.href} target="_blank">
+          <a href={secondHref} target="_blank">
             <img src={Instagram} alt="instagram" />
           </a>
-          <a href={footerLinks.cellBlocks[2].link.href} target="_blank">
+          <a href={thirdHref} target="_blank">
             <img src={Twitter} alt="twitter" />
           </a>
-          <a href={footerLinks.cellBlocks[3].link.href} target="_blank">
+          <a href={fourthHref} target="_blank">
             <img src={Pinterest} alt="pinterest" />
           </a>
         </div>
