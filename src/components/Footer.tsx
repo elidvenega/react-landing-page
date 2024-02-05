@@ -2,7 +2,7 @@ import Facebook from "../assets/images/icon-facebook.svg";
 import Instagram from "../assets/images/icon-instagram.svg";
 import Twitter from "../assets/images/icon-twitter.svg";
 import Pinterest from "../assets/images/icon-pinterest.svg";
-import { Content } from "./Data";
+import { Content } from "./data";
 
 const footerLinks: Content = {
   cellBlocks: [
@@ -24,6 +24,9 @@ const footerLinks: Content = {
     {
       link: {
         href: "https://www.pinterest.com/",
+        content: {
+          src: Pinterest
+        }
       },
     },
   ],
@@ -33,6 +36,7 @@ const firstHref = footerLinks.cellBlocks[0]?.link?.href;
 const secondHref = footerLinks.cellBlocks[1]?.link?.href;
 const thirdHref = footerLinks.cellBlocks[2]?.link?.href;
 const fourthHref = footerLinks.cellBlocks[3]?.link?.href;
+
 export default function Footer({ footerTitle }: { footerTitle: string }) {
   return (
     <>
