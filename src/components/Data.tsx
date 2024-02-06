@@ -1,3 +1,5 @@
+
+
 export interface ImageInfo {
   src?: string
   alt?: string
@@ -14,7 +16,9 @@ export interface LinkInfo {
 }
 
 export interface BlockInfo {
+  heading?: string
   title?: string
+  content?: string
   image?: ImageInfo
   link?: LinkInfo
 }
