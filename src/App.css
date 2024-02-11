@@ -17,6 +17,7 @@
 .header {
   background: url("./assets/images/desktop/image-header.jpg") no-repeat center
     center/cover;
+  min-width: 100dvhs;
   min-height: 100vh;
   max-width: 100%;
 }
@@ -138,7 +139,8 @@
   color: var(--green-color);
   text-align: center;
   line-height: 1.5;
-  padding: 0.3rem;
+  padding: 0.6rem;
+  max-width: 45ch;
 }
 
 .content-img {
@@ -170,7 +172,8 @@
   color: var(--blue-color);
   text-align: center;
   line-height: 1.5;
-  padding: 0.3rem;
+  padding: 0.6rem;
+  max-width: 36ch;
 }
 
 .content-text h3 {
@@ -178,15 +181,15 @@
   font-weight: 900;
   font-size: 1.3rem;
   text-transform: uppercase;
-  margin-top: 0.4rem;
+  margin-top: 1.2rem;
 }
 
 /* Testimonials CSS */
 
 .testimonials-heading {
   color: var(--testimonials-font-color);
-  font-size: calc(var(--h2-font-size) - 0.3rem);
-  font-weight: 900;
+  font-size: calc(var(--h2-font-size) - 0.6rem);
+  font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-top: 5rem;
@@ -196,7 +199,8 @@
 .testimonials-container {
   display: flex;
   justify-content: center;
-  padding: 4rem;
+  align-items: center;
+  padding: 5rem;
   margin-top: 0.5rem;
 }
 
@@ -208,13 +212,19 @@
 
 .testimonials-container .testimonials-img {
   border-radius: 100%;
-  width: 30%;
+  width: 25%;
+}
+
+/* utility class for padding*/
+
+.testimonials-padding {
+  padding: 2.2rem;
 }
 
 .testimonials-container p {
   color: var(--paragraph-grey-color);
   font-weight: bold;
-  padding: 1.2rem;
+  text-align: center;
   line-height: 1.7;
 }
 
@@ -228,11 +238,12 @@
 .testimonials-names {
   color: var(--dark-blue-text-color);
   font-weight: bolder;
-  font-size: calc(var(--h2-font-size) - 0.7rem);
+  font-size: calc(var(--h2-font-size) - 0.6rem);
 }
 
 .testimonials-positions {
   color: var(--testimonials-font-color);
+  padding: 1rem;
 }
 
 /* Food Images */
@@ -299,6 +310,7 @@
   transition: 0.9s;
 }
 
+/* for mobile screens */
 @media screen and (max-width: 820px) {
   .header-logo {
     font-size: calc(var(--h2-font-size) - 0.7rem);
@@ -437,6 +449,7 @@
   }
 }
 
+/* for mobile screens */
 @media screen and (max-width: 760px) {
   .content-img-cherry h2 {
     margin-top: 27rem;
@@ -447,6 +460,7 @@
   }
 }
 
+/* for desktop screens */
 @media screen and (min-width: 830px) {
   .hamburger-menu {
     display: none;

@@ -1,13 +1,12 @@
 import EggImg from "../assets/images/desktop/image-transform.jpg";
 import PinkCup from "../assets/images/desktop/image-stand-out.jpg";
-// import { Content } from "./data";
 import { Content } from "./Data.tsx";
 
 const contentData: Content = {
   cellBlocks: [
     {
       heading: `Transform your brand`,
-      title: `Lear More`,
+      title: `Learn More`,
       content: ` We are a full-service creative agency specializing in
       helping brands grow fast. Engage your clients through
         compelling visuals that do most of the marketing for you.`,
