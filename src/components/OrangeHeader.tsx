@@ -27,17 +27,7 @@ export default function OrangeHeader({ title }: { title: string }) {
         </nav>
         <h1>{title}</h1>
         <a href="#bottom">
-          <img
-            style={{
-              textAlign: "center",
-              margin: "auto",
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "4rem",
-            }}
-            src={Arrow}
-            alt="Arrow"
-          />
+          <img className="header-arrow" src={Arrow} alt="Arrow" />
         </a>
       </header>
     </>

@@ -74,6 +74,14 @@
   color: var(--white-text);
 }
 
+.header-arrow {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
 /* Hamburger menu */
 
 /* UI pictures CSS */
