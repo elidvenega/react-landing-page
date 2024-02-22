@@ -24,9 +24,6 @@ const footerLinks: Content = {
     {
       link: {
         href: "https://www.pinterest.com/",
-        content: {
-          src: Pinterest
-        }
       },
     },
   ],

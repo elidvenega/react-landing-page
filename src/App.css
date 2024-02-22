@@ -17,7 +17,7 @@
 .header {
   background: url("./assets/images/desktop/image-header.jpg") no-repeat center
     center/cover;
-  min-width: 100dvhs;
+  min-height: 100dvh;
   min-height: 100vh;
   max-width: 100%;
 }
@@ -72,6 +72,14 @@
 .header-btn:hover {
   background-color: var(--nav-hover-color);
   color: var(--white-text);
+}
+
+.header-arrow {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
 }
 
 /* Hamburger menu */
