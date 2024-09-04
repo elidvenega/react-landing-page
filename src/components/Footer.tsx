@@ -36,7 +36,6 @@ const fourthHref = footerLinks.cellBlocks[3]?.link?.href;
 
 export default function Footer({ footerTitle }: { footerTitle: string }) {
   return (
-    <>
       <footer className="footer" id="bottom">
         <h4>{footerTitle}</h4>
         <div className="footer-nav">
@@ -69,6 +68,6 @@ export default function Footer({ footerTitle }: { footerTitle: string }) {
           </a>
         </div>
       </footer>
-    </>
+    
   );
 }

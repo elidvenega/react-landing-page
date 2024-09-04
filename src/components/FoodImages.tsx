@@ -5,13 +5,11 @@ import SugarCubes from "../assets/images/desktop/image-gallery-sugarcubes.jpg";
 
 export default function FoodImages() {
   return (
-    <>
-      <div className="food-images-container">
-        <img className="food-images" src={MilkImg} alt="milk-img" />
-        <img className="food-images" src={OrangePlate} alt="orange-img" />
-        <img className="food-images" src={Cone} alt="cone-img" />
-        <img className="food-images" src={SugarCubes} alt="sugar-img" />
-      </div>
-    </>
+    <div className="food-images-container">
+      <img className="food-images" src={MilkImg} alt="milk-img" />
+      <img className="food-images" src={OrangePlate} alt="orange-img" />
+      <img className="food-images" src={Cone} alt="cone-img" />
+      <img className="food-images" src={SugarCubes} alt="sugar-img" />
+    </div>
   );
 }
