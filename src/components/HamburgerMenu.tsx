@@ -3,13 +3,13 @@ import { useState } from "react";
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
+  const handleToggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <div className="hamburger-menu">
-      <div className="hamburger-icon" onClick={toggleMenu}>
+      <div className="hamburger-icon" onClick={handleToggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>

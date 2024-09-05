@@ -5,7 +5,7 @@ import { Content } from "./Data.tsx";
 const contentData: Content = {
   cellBlocks: [
     {
-      heading: `Transform your brand`, 
+      heading: `Transform your brand`,
       title: `Learn More`,
       content: ` We are a full-service creative agency specializing in
       helping brands grow fast. Engage your clients through
