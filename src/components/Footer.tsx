@@ -36,38 +36,37 @@ const fourthHref = footerLinks.cellBlocks[3]?.link?.href;
 
 export default function Footer({ footerTitle }: { footerTitle: string }) {
   return (
-      <footer className="footer" id="bottom">
-        <h4>{footerTitle}</h4>
-        <div className="footer-nav">
-          <nav>
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Projects</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div className="footer-image-links">
-          <a href={firstHref} target="_blank">
-            <img src={Facebook} alt="facebook" />
-          </a>
-          <a href={secondHref} target="_blank">
-            <img src={Instagram} alt="instagram" />
-          </a>
-          <a href={thirdHref} target="_blank">
-            <img src={Twitter} alt="twitter" />
-          </a>
-          <a href={fourthHref} target="_blank">
-            <img src={Pinterest} alt="pinterest" />
-          </a>
-        </div>
-      </footer>
-    
+    <footer className="footer" id="bottom">
+      <h4>{footerTitle}</h4>
+      <div className="footer-nav">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div className="footer-image-links">
+        <a href={firstHref} target="_blank">
+          <img src={Facebook} alt="facebook" />
+        </a>
+        <a href={secondHref} target="_blank">
+          <img src={Instagram} alt="instagram" />
+        </a>
+        <a href={thirdHref} target="_blank">
+          <img src={Twitter} alt="twitter" />
+        </a>
+        <a href={fourthHref} target="_blank">
+          <img src={Pinterest} alt="pinterest" />
+        </a>
+      </div>
+    </footer>
   );
 }
