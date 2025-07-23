@@ -1,21 +1,19 @@
 import ArrowImg from "../assets/images/icon-arrow-down.svg";
 import LogoImg from "../assets/images/logo.svg";
 
+const navLinks: string[] = ["About", "Services", "Projects"];
+
 export default function OrangeHeader({ title }: { title: string }) {
   return (
     <header className="header">
       <nav className="header-nav">
         <img className="header-logo" src={LogoImg} alt="logo" />
         <ul className="header-nav-ul">
-          <li>
-            <a href="#"> About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
+          {navLinks.map((link) => (
+            <li>
+              <a href="#"> {link}</a>
+            </li>
+          ))}
           <li>
             <button type="button" className="header-btn">
               CONTACT

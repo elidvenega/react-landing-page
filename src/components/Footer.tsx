@@ -9,6 +9,7 @@ const footerLinks: Content = {
     {
       link: {
         href: "https://www.facebook.com/",
+        content: Facebook,
       },
     },
     {

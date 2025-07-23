@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+const navLinks: string[] = ["About", "Services", "Projects"];
+
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,15 +18,11 @@ export default function HamburgerMenu() {
       </div>
       <nav className={`hamburger-nav ${isOpen ? "open" : ""}`}>
         <ul className={`menu-items ${isOpen ? "open" : ""}`}>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
+          {navLinks.map((link) => (
+            <li>
+              <a href="#"> {link}</a>
+            </li>
+          ))}
           <li>
             <button className="menu-items-button" type="button">
               contact
