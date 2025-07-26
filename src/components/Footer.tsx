@@ -15,16 +15,19 @@ const footerLinks: Content = {
     {
       link: {
         href: "https://www.instagram.com/",
+        content: Instagram,
       },
     },
     {
       link: {
         href: "https://twitter.com/",
+        content: Twitter,
       },
     },
     {
       link: {
         href: "https://www.pinterest.com/",
+        content: Pinterest,
       },
     },
   ],
@@ -35,6 +38,8 @@ const secondHref = footerLinks.cellBlocks[1]?.link?.href;
 const thirdHref = footerLinks.cellBlocks[2]?.link?.href;
 const fourthHref = footerLinks.cellBlocks[3]?.link?.href;
 
+const navLinks: string[] = ["About", "Services", "Projects"];
+
 export default function Footer({ footerTitle }: { footerTitle: string }) {
   return (
     <footer className="footer" id="bottom">
@@ -42,15 +47,11 @@ export default function Footer({ footerTitle }: { footerTitle: string }) {
       <div className="footer-nav">
         <nav>
           <ul>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Projects</a>
-            </li>
+            {navLinks.map((link) => (
+              <li>
+                <a href="#"> {link}</a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
