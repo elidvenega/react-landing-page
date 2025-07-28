@@ -11,6 +11,7 @@ export interface HeroInfo {
 export interface LinkInfo {
   href: string;
   content?: ImageInfo | string;
+  key?: number;
 }
 
 export interface BlockInfo {

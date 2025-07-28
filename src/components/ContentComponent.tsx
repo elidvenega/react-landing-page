@@ -1,6 +1,6 @@
 import EggImg from "../assets/images/desktop/image-transform.jpg";
 import PinkCup from "../assets/images/desktop/image-stand-out.jpg";
-import { Content } from "./Data.tsx";
+import { Content } from "../data/Data";
 
 const contentData: Content = {
   cellBlocks: [

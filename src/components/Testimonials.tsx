@@ -2,7 +2,7 @@ import FirstImg from "../assets/images/image-emily.jpg";
 import SecondImg from "../assets/images/image-thomas.jpg";
 import ThirdImg from "../assets/images/image-jennie.jpg";
 
-import { Content } from "./Data.tsx";
+import { Content } from "../data/Data";
 
 const testimonialsData: Content = {
   cellBlocks: [

@@ -1,7 +1,5 @@
 import { useState } from "react";
-
-const navLinks: string[] = ["About", "Services", "Projects"];
-
+import { navLinks } from "../utilities/utilitiy-variables";
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 

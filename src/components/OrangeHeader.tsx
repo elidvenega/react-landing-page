@@ -1,7 +1,6 @@
 import ArrowImg from "../assets/images/icon-arrow-down.svg";
 import LogoImg from "../assets/images/logo.svg";
-
-const navLinks: string[] = ["About", "Services", "Projects"];
+import { navLinks } from "../utilities/utilitiy-variables";
 
 export default function OrangeHeader({ title }: { title: string }) {
   return (

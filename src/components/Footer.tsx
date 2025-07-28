@@ -2,7 +2,8 @@ import Facebook from "../assets/images/icon-facebook.svg";
 import Instagram from "../assets/images/icon-instagram.svg";
 import Twitter from "../assets/images/icon-twitter.svg";
 import Pinterest from "../assets/images/icon-pinterest.svg";
-import { Content } from "./Data";
+import { Content } from "../data/Data";
+import { navLinks } from "../utilities/utilitiy-variables";
 
 const footerLinks: Content = {
   cellBlocks: [
@@ -10,35 +11,32 @@ const footerLinks: Content = {
       link: {
         href: "https://www.facebook.com/",
         content: Facebook,
+        key: 1,
       },
     },
     {
       link: {
         href: "https://www.instagram.com/",
         content: Instagram,
+        key: 2,
       },
     },
     {
       link: {
         href: "https://twitter.com/",
         content: Twitter,
+        key: 3,
       },
     },
     {
       link: {
         href: "https://www.pinterest.com/",
         content: Pinterest,
+        key: 4,
       },
     },
   ],
 };
-
-const firstHref = footerLinks.cellBlocks[0]?.link?.href;
-const secondHref = footerLinks.cellBlocks[1]?.link?.href;
-const thirdHref = footerLinks.cellBlocks[2]?.link?.href;
-const fourthHref = footerLinks.cellBlocks[3]?.link?.href;
-
-const navLinks: string[] = ["About", "Services", "Projects"];
 
 export default function Footer({ footerTitle }: { footerTitle: string }) {
   return (
@@ -55,19 +53,27 @@ export default function Footer({ footerTitle }: { footerTitle: string }) {
           </ul>
         </nav>
       </div>
+
       <div className="footer-image-links">
-        <a href={firstHref} target="_blank">
-          <img src={Facebook} alt="facebook" />
-        </a>
-        <a href={secondHref} target="_blank">
-          <img src={Instagram} alt="instagram" />
-        </a>
-        <a href={thirdHref} target="_blank">
-          <img src={Twitter} alt="twitter" />
-        </a>
-        <a href={fourthHref} target="_blank">
-          <img src={Pinterest} alt="pinterest" />
-        </a>
+        {footerLinks.cellBlocks.map((footer) =>
+          footer.link ? (
+            <a
+              href={footer.link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={footer.link.key}
+            >
+              <img
+                src={
+                  typeof footer.link.content === "string"
+                    ? footer.link.content
+                    : (footer.link.content as any).default ?? ""
+                }
+                alt={footer.link.href.split(".")[1]}
+              />
+            </a>
+          ) : null
+        )}
       </div>
     </footer>
   );
