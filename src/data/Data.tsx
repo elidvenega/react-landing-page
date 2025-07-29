@@ -18,6 +18,7 @@ export interface BlockInfo {
   heading?: string;
   title?: string;
   content?: string;
+  layout?: string;
   image?: ImageInfo;
   link?: LinkInfo;
 }
