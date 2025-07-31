@@ -2,8 +2,8 @@ import Facebook from "../assets/images/icon-facebook.svg";
 import Instagram from "../assets/images/icon-instagram.svg";
 import Twitter from "../assets/images/icon-twitter.svg";
 import Pinterest from "../assets/images/icon-pinterest.svg";
-import { Content } from "../data/Data";
-import { navLinks } from "../utilities/utilitiy-variables";
+import { Content } from "../types/types";
+import NavBar from "./NavBar";
 
 const footerLinks: Content = {
   cellBlocks: [
@@ -43,15 +43,7 @@ export default function Footer({ footerTitle }: { footerTitle: string }) {
     <footer className="footer" id="bottom">
       <h4>{footerTitle}</h4>
       <div className="footer-nav">
-        <nav>
-          <ul>
-            {navLinks.map((link) => (
-              <li>
-                <a href="#"> {link}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <NavBar />
       </div>
 
       <div className="footer-image-links">

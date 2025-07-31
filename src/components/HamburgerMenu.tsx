@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { navLinks } from "../utilities/utilitiy-variables";
+import { navLinks } from "../utilities/utilitiy-arrays";
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,9 +16,9 @@ export default function HamburgerMenu() {
       </div>
       <nav className={`hamburger-nav ${isOpen ? "open" : ""}`}>
         <ul className={`menu-items ${isOpen ? "open" : ""}`}>
-          {navLinks.map((link) => (
-            <li>
-              <a href="#"> {link}</a>
+          {navLinks.map((nav) => (
+            <li key={nav.id}>
+              <a href="#"> {nav.link}</a>
             </li>
           ))}
           <li>

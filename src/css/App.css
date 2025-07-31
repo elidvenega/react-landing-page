@@ -15,7 +15,7 @@
 }
 /* Header and nav classes */
 .header {
-  background: url("./assets/images/desktop/image-header.jpg") no-repeat center
+  background: url("../assets/images/desktop/image-header.jpg") no-repeat center
     center/cover;
   min-height: 100dvh;
   min-height: 100vh;
@@ -122,7 +122,7 @@
 }
 /* Cherry Image Content */
 .content-img-cherry {
-  background: url("./assets/images/desktop/image-graphic-design.jpg") no-repeat
+  background: url("../assets/images/desktop/image-graphic-design.jpg") no-repeat
     center center/cover;
   min-height: 90vh;
   object-fit: cover;
@@ -156,7 +156,7 @@
 }
 /* Orange Image Content */
 .content-img-orange {
-  background: url("./assets/images/desktop/image-photography.jpg") no-repeat
+  background: url("../assets/images/desktop/image-photography.jpg") no-repeat
     center center/cover;
   min-height: 90vh;
   object-fit: cover;

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./css/App.css";
 import LandingPage from "./pages/LandingPage";
 
 export default function App() {

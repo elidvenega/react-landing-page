@@ -1,6 +1,6 @@
 import ArrowImg from "../assets/images/icon-arrow-down.svg";
 import LogoImg from "../assets/images/logo.svg";
-import { navLinks } from "../utilities/utilitiy-variables";
+import { navLinks } from "../utilities/utilitiy-arrays";
 
 export default function OrangeHeader({ title }: { title: string }) {
   return (
@@ -8,9 +8,9 @@ export default function OrangeHeader({ title }: { title: string }) {
       <nav className="header-nav">
         <img className="header-logo" src={LogoImg} alt="logo" />
         <ul className="header-nav-ul">
-          {navLinks.map((link) => (
-            <li>
-              <a href="#"> {link}</a>
+          {navLinks.map((nav) => (
+            <li key={nav.id}>
+              <a href="#"> {nav.link}</a>
             </li>
           ))}
           <li>

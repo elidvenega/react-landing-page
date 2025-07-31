@@ -1,8 +1,7 @@
 import React from "react";
-
 import EggImg from "../assets/images/desktop/image-transform.jpg";
 import PinkCup from "../assets/images/desktop/image-stand-out.jpg";
-import { Content } from "../data/Data.tsx";
+import { Content } from "../types/types.tsx";
 
 const contentData: Content = {
   cellBlocks: [
