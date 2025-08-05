@@ -11,6 +11,7 @@ const contentData: Content = {
       content: `We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.`,
       layout: "text-image",
       image: { src: EggImg, alt: "egg-img" },
+      id: 1,
     },
     {
       heading: "Stand out to the right audience",
@@ -18,16 +19,19 @@ const contentData: Content = {
       content: `Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.`,
       layout: "image-text",
       image: { src: PinkCup, alt: "pink-cup" },
+      id: 2,
     },
     {
       heading: "Graphic Design",
       content: `Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.`,
       layout: "cherry",
+      id: 3,
     },
     {
       heading: "Photography",
       content: `Increase your credibility by getting the most stunning, high-quality photos that improve your business image.`,
       layout: "orange",
+      id: 4,
     },
   ],
 };
@@ -35,11 +39,13 @@ const contentData: Content = {
 export default function ContentComponent() {
   return (
     <div className="content-container">
-      {contentData.cellBlocks.map((block, index) => {
+      {contentData.cellBlocks.map((block) => {
+        // Separating the two classes into 2 parts where one of them is true
         if (block.layout === "text-image" || block.layout === "image-text") {
           const text = (
             <div className="content-text">
               <div
+              // Using terninary to do the CSS 
                 className={
                   block.layout === "text-image"
                     ? "content-text-container"
@@ -62,7 +68,7 @@ export default function ContentComponent() {
           );
 
           return (
-            <React.Fragment key={index}>
+            <React.Fragment key={block.id}>
               {block.layout === "text-image" ? (
                 <>
                   {text}
@@ -81,7 +87,7 @@ export default function ContentComponent() {
         // Cherry or Orange layouts
         return (
           <div
-            key={index}
+            key={block.id}
             className={
               block.layout === "cherry"
                 ? "content-img-cherry"
