@@ -5,6 +5,7 @@ interface ErrorBoundaryState {
   hasError: boolean;
 }
 
+// Error Boundary Class in React
 class ErrorBoundary extends React.Component<React.PropsWithChildren<{}>, ErrorBoundaryState> {
   constructor(props: React.PropsWithChildren<{}>) {
     super(props);
